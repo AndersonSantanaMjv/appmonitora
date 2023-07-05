@@ -57,7 +57,7 @@ class _NovaMonitoracaoWidgetState extends State<NovaMonitoracaoWidget> {
     if (isValido) {
       final item = InfraEntity(
         uuid: const Uuid().v4(),
-        descricaoDoMonitorado: _descricaoDoMonitoradoController.text,
+        descricaoDoMonitorado: dropdownValue.name,
       );
 
       bool valid = true;
@@ -100,7 +100,7 @@ class _NovaMonitoracaoWidgetState extends State<NovaMonitoracaoWidget> {
                 ),
                 DropdownMenuItem(
                   value: TipoListaMonitorado.DB2,
-                  child: Text('TarMonitorar Banco DB2'),
+                  child: Text('Monitorar Banco DB2'),
                 ),
                 DropdownMenuItem(
                   value: TipoListaMonitorado.IO,
@@ -126,17 +126,6 @@ class _NovaMonitoracaoWidgetState extends State<NovaMonitoracaoWidget> {
               },
             ),
           ],
-        ),
-        TextFormField(
-          controller: _descricaoDoMonitoradoController,
-          decoration: const InputDecoration(
-              hintText: 'Digite um item a ser monitorado'),
-          validator: (value) {
-            if (value == null || value.isEmpty) {
-              return 'Por favor, digite um item a ser monitorado.';
-            }
-            return null;
-          },
         ),
         const SpacerComponent(),
         Form(

@@ -10,6 +10,6 @@ class ConfiguracaoTab extends StatefulWidget {
 class _ConfiguracaoTabState extends State<ConfiguracaoTab> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container();
   }
 }

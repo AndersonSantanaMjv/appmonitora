@@ -18,9 +18,10 @@ class _HomePageState extends State<HomePage> {
   late int abaSelecionada;
 
   final List<BottomNavigationBarItem> _abas = [
-    const BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Monitoração'),
     const BottomNavigationBarItem(
-        icon: Icon(Icons.account_circle), label: 'Configuração'),
+        icon: Icon(Icons.graphic_eq), label: 'Monitoração'),
+    const BottomNavigationBarItem(
+        icon: Icon(Icons.engineering), label: 'Configuração'),
   ];
 
   final List<Widget> _conteudos = [

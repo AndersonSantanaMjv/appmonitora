@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'app_routes.dart';
+
 class MonitoraApp extends StatefulWidget {
   const MonitoraApp({super.key});
 
@@ -10,6 +12,9 @@ class MonitoraApp extends StatefulWidget {
 class _MonitoraAppState extends State<MonitoraApp> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: 'Monitorar serviços',
+      routes: AppRoutes.routes(),
+    );
   }
 }

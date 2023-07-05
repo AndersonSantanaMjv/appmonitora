@@ -10,6 +10,6 @@ class MonitoracaoTab extends StatefulWidget {
 class _MonitoracaoTabState extends State<MonitoracaoTab> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container();
   }
 }
